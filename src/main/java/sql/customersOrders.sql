@@ -1,0 +1,4 @@
+SELECT CustomerID, COUNT(*) as nbOrders
+FROM CUSTOMERS_ORDERS
+GROUP BY CustomerID
+HAVING COUNT(*) > 1;
